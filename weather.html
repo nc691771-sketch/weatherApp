@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <!-- Background decorations -->
+    <div class="sun">☀</div>
+
+    <div class="cloud cloud1">☁</div>
+    <div class="cloud cloud2">☁</div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="title">
+            <span>🌤️</span>
+            <h1>Weather App</h1>
+        </div>
+
+        <p class="subtitle">
+            Check the current weather of your city
+        </p>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <div class="input-container">
+                <span>📍</span>
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name"
+                >
+            </div>
+
+            <button id="searchBtn">
+                🔍 Search
+            </button>
+
+        </div>
+
+        <!-- Loading -->
+        <p id="loading" class="loading">
+            Loading...
+        </p>
+
+        <!-- Error -->
+        <p id="error" class="error"></p>
+
+        <!-- Weather Card -->
+        <div id="weatherCard" class="weather-card">
+
+        </div>
+
+    </div>
+
+
+    <!-- Hills -->
+    <div class="hills">
+        <div class="hill hill1"></div>
+        <div class="hill hill2"></div>
+        <div class="hill hill3"></div>
+    </div>
+
+
+    <script src="weather.js"></script>
+
+</body>
+</html>
